@@ -2,7 +2,7 @@ FROM openjdk:8
 
 MAINTAINER Debasis
 
-WORKDIR /
+WORKDIR /home
 
 ADD sample.jar sample.jar
 
