@@ -4,19 +4,8 @@ MAINTAINER Debasis
 
 WORKDIR /home
 
-ADD sample.jar sample.jar
+ADD ds.jar ds.jar
 
-RUN mkdir sampleapp
-RUN chmod 777 sampleapp
-RUN cd sampleapp
-RUN touch test.txt
-RUN chmod 777 test.txt
+EXPOSE 9001
 
-
-EXPOSE 8081
-
-CMD ["java", "-jar", "sample.jar"]
-
-
-
-
+CMD ["java", "-jar", "ds.jar"]
